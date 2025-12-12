@@ -2,6 +2,10 @@
 #include <stdexcept>
 
 int Calculator::Add(int a, int b) {
+#if defined(_WINDOWS)
+    return a + b + 1;
+#endif
+
     return a + b;
 }
 
